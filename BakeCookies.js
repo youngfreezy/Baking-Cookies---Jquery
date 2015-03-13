@@ -1,17 +1,3 @@
-/* When someone clicks on Use 1 Sugar, decrement 1 from the sugar in ingredients, and increment 1 from the sugar count in the pot
-Replicate the same for flour
-When someone clicks Cook a Cookie, deplete 6 units of flour and 3 units of sugar. Add 1 cookie as well.
-When you click on buy Sugar, add 1 unit of sugar for $10.
-1 unit of flour costs $20
-Make sure you spend time cleaning up your code. Keeping your code flexible and DRY is very important. 
-This is your chance to showcase your ability to write excellent code. */
-
-/* Right now, anyone can just jump into the developer console for the HTML page and change how many 
-cookies are available. This is unacceptable! We cannot have people counterfeiting cookies! 
-Instead of keeping track of cookies inside of the HTML, we want to keep track of cookies inside of our 
-JavaScript code - the HTML code will simply reflect what the JavaScript says.
-
-For example you can keep track of an object called inventory which keeps track of how much money you have, how many cookies you have, etc:
 
 var inventory = {
   product: {
@@ -27,8 +13,7 @@ var inventory = {
     flour: 0
   }
 };
-This object will hold the "truth" about what you actually have, and anytime you update this object, 
-you will want to also update the HTML page regarding how much you have. */
+
 //functional approach
 $(document).ready(function() {
     var inventory = {
